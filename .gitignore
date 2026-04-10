@@ -1,0 +1,55 @@
+# --- Entorno Virtual ---
+# Nunca se sube porque cada PC debe generar el suyo
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python ---
+# Archivos compilados y temporales
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.ipynb_checkpoints
+
+# --- Variables de Entorno ---
+# Seguridad: Aquí van contraseñas, tokens o llaves privadas
+.env
+.flaskenv
+
+# --- Archivos de Registro (Logs) ---
+# Evita subir historiales de ejecución locales
+*.log
+
+# --- Bases de Datos Locales ---
+# Evita subir bases de datos de desarrollo o pruebas
+*.sqlite3
+*.db
+
+# --- Testing ---
+# Caché y reportes de herramientas de pruebas
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Editores / IDEs ---
+# Lo mantenemos privado para no compartir configuraciones locales
+.vscode/
+.idea/
+
+# --- Sistema Operativo ---
+# Archivos basura que genera Windows y macOS automáticamente
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Distribución / Paquetes ---
+# Si alguna vez creas un paquete, esto evita subir los archivos de construcción
+dist/
+build/
+*.egg-info/
+
+
