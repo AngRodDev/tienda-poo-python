@@ -1,3 +1,4 @@
+from typing import Optional
 from tienda.models.pedido import Pedido
 from tienda.interfaces.pago_interface import MetodoPago
 from tienda.interfaces.descuento_interface import Descuento
@@ -12,7 +13,7 @@ class TiendaService:
     """
     # 🔹 Constructor
     # 🔹 Dependency Injection
-    def __init__(self, metodo_pago: MetodoPago, descuento: Descuento) -> None:
+    def __init__(self, metodo_pago: MetodoPago, descuento: Optional[Descuento] = None) -> None:
         # Atributos
         self._pedido = Pedido()
         # 🔹 DIP
