@@ -1,7 +1,6 @@
-def main():
-    print("Proyecto Funcionando correctamente. 🚀")
-
+from tienda.ui.menu import ejecutar
+    
 if __name__ == "__main__":
-    main()
+    ejecutar()
 
     
